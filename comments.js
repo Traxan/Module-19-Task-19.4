@@ -19,6 +19,9 @@ function comments(state = [], action) {
                 text: action.text
             }
                 , ...state.comments];
+            
+        default:
+            return state;
     }
 }
 
